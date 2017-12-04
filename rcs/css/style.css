@@ -1,0 +1,175 @@
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: "open sans",sans-serif;
+}
+
+header {
+  display:flex;
+  position: fixed;
+  justify-content: space-between;
+  height:4rem;
+  width:100%;
+  background-color: white;
+  z-index: 50;
+}
+
+
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+
+h2 {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.blue-text {
+  color: #399bd1;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  height:100%;
+  width:auto;
+  height:100%;
+
+
+}
+nav li {
+  display: inline-block;
+}
+
+nav img {
+  display: inline-block;
+  height:50%;
+}
+
+.carousel-caption {
+  margin-bottom: 5rem;
+}
+
+.carousel-caption h1 {
+  width:51.3rem;
+  font-family: "lora";
+  font-size: 7.1rem;
+  color: white;
+  margin-top: 11.85rem;
+  text-shadow: -.5px -.5px #000, .5px -.5px #000, -.5px .5px #000, .5px .5px #000;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  font-family: "open sans",sans-serif;
+  color: white;
+  width:51.3rem;
+  text-shadow: -.25px -.25px #000, .25px -.25px #000, -.25px .25px #000, .25px .25px #000;
+}
+
+header .logo {
+  display: inline-block;
+  height:50%;
+  margin:auto 2rem;
+}
+
+nav .container {
+  display: inline-flex;
+}
+
+.nav-link {
+  display:inline-block;
+  margin-left: 2rem;
+  color:#bbbbbb;
+  cursor: pointer;
+  height:100%;
+}
+
+.nav-link:hover{
+  color:black;
+}
+
+.start-link {
+  color:#399bd1;
+  cursor: pointer;
+}
+
+.start-link:hover {
+  color:#000000;
+  cursor: pointer;
+  background-color: #eeeeee;
+  height:100%;
+}
+
+.product-cat li {
+  color:rgba(0,0,0,0.7);
+  line-height: 1.4;
+}
+
+.image-container {
+  opacity:.5;
+  transition: 700ms ease;
+  z-index: 50;
+}
+
+.image-container:hover {
+  display:flex;
+  opacity:1;
+  transform: scale(1.2, 1.2);
+}
+
+footer {
+  background-color: #f3f3f3;
+  text-align: center;
+  margin-top: 5.85rem;
+}
+
+footer h1 {
+  font-size: 2.5rem;
+  padding-top: 5.2rem;
+}
+
+footer p {
+  width: 42rem;
+  margin:1.4rem auto;
+}
+
+footer button {
+  margin-bottom:5.2rem;
+}
+
+@media only screen and (max-width:640px) {
+
+  .logo {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .carousel-caption {
+    margin-bottom: .5rem;
+    text-align: center;
+  }
+
+  .carousel-caption h1 {
+    font-family: "lora";
+    font-size: 2rem;
+    width:80%;
+    color: white;
+    text-shadow: -.5px -.5px #000, .5px -.5px #000, -.5px .5px #000, .5px .5px #000;
+  }
+
+  .carousel-caption p {
+    font-size: .75rem;
+    font-family: "lora",sans-serif;
+    color: white;
+    width:80%;
+    text-shadow: -.25px -.25px #000, .25px -.25px #000, -.25px .25px #000, .25px .25px #000;
+  }
+
+
+}
