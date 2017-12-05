@@ -10,9 +10,9 @@ header {
   display:flex;
   position: fixed;
   justify-content: space-between;
+  align-items: center;
   height:4rem;
   width:100%;
-  background-color: white;
   z-index: 50;
 }
 
@@ -26,62 +26,19 @@ h2 {
   font-weight: 700;
 }
 
-.blue-text {
+ul .active {
   color: #399bd1;
 }
 
-nav ul {
-  display: flex;
-  align-items: center;
-  height:100%;
-  width:auto;
-  height:100%;
-
-
-}
-nav li {
-  display: inline-block;
+.btn-link:hover {
+  text-decoration: none;
 }
 
-nav img {
-  display: inline-block;
-  height:50%;
-}
-
-.carousel-caption {
-  margin-bottom: 5rem;
-}
-
-.carousel-caption h1 {
-  font-family: "lora";
-  font-size: 6.1rem;
-  color: white;
-  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
-}
-
-.carousel-caption p {
-  font-size: 1.5rem;
-  font-family: "open sans",sans-serif;
-  color: white;
-  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;S
-}
-
-header .logo {
-  display: inline-block;
-  height:50%;
-  margin:auto 2rem;
-}
-
-nav .container {
-  display: inline-flex;
-}
 
 .nav-link {
   display:inline-block;
-  margin-left: 2rem;
   color:#bbbbbb;
   cursor: pointer;
-  height:100%;
 }
 
 .nav-link:hover{
@@ -91,14 +48,69 @@ nav .container {
 .start-link {
   color:#399bd1;
   cursor: pointer;
+  margin-left: 2rem;
 }
 
 .start-link:hover {
   color:#000000;
   cursor: pointer;
-  background-color: #eeeeee;
   height:100%;
 }
+
+.nav-link:active {
+  color:#bbbbbb;
+  cursor: pointer;
+  background-color: #eeeeee;
+  height:auto;
+}
+
+.explore {
+  color:blue;
+}
+
+.logo {
+  margin-right: 1rem;
+  margin-top: 1rem;
+}
+
+
+header{
+  display: inline-block;
+}
+header ul {
+  display: block;
+
+
+}
+header li {
+  display: inline-block;
+}
+.nav .active {
+
+}
+
+header img {
+display:inline-block;
+}
+
+.carousel-caption {
+  margin-bottom: 5rem;
+}
+
+.carousel-caption h1 {
+  font-family: "lora";
+  font-size: 7.1rem;
+  color: white;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  font-family: "verdana",sans-serif;
+  color: white;
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;S
+}
+
 
 .product-cat li {
   color:rgba(0,0,0,0.7);
@@ -137,7 +149,7 @@ footer button {
   margin-bottom:5.2rem;
 }
 
-@media only screen and (max-width:720px) {
+@media only screen and (max-width:768px) {
 
   .logo {
     visibility: hidden;
@@ -152,14 +164,14 @@ footer button {
   .carousel-caption h1 {
     font-family: "lora";
     font-size: 3rem;
-
+    font-weight: 700;
     color: white;
     text-shadow: -.5px -.5px #000, .5px -.5px #000, -.5px .5px #000, .5px .5px #000;
   }
 
   .carousel-caption p {
-    font-size: 1rem;
-    font-family: "lora",sans-serif;
+    font-size: 1.25rem;
+    font-family: "verdana",sans-serif;
     color: white;
 
     text-shadow: -.25px -.25px #000, .25px -.25px #000, -.25px .25px #000, .25px .25px #000;
